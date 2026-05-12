@@ -7,6 +7,11 @@ import Cachorro from'./components/Cachorro';
 import Filho from'./components/Filho';
 import Counter from'./components/Counter';
 import UserInfoForm from'./components/UserInfoForm';
+import Button from './components/Button';
+import PaiFunction from'./components/PaiFunction';
+import Form from './components/Form';
+import RenderCondicional from './components/RenderCondicional';
+import LoginButton from './components/LoginButton';
 
 function App() {
   return (<>
@@ -25,8 +30,18 @@ function App() {
      <Counter/>
      {/*6.7  - multiplos estados*/}
      <UserInfoForm/>
-     </>
-
+     {/*6.8  - Eventos*/}
+     <Button />
+     {/*6.9  -Passando funcoes de  manipulaçao de eventos como props*/}
+     <PaiFunction/>
+     {/*6.10  - Eventos de form*/}
+     <Form/>
+     {/*6.11  - Renderização condicional*/}
+    <RenderCondicional user = "Val"/>
+    {/*6.12  - Expressao Ternária*/}
+    <LoginButton loggedIn ={false}/>
+    <LoginButton loggedIn ={true}/>
+</> 
   );
 }
 

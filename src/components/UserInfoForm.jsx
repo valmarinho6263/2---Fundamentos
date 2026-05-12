@@ -15,7 +15,7 @@ const UserInfoForm = () => {
     };
 
     return(
-    <form onSubmit = {handleSubmit}>
+    <form onSubmit = {handleSubmit}> 
     <input 
     type = "text"
     value = {name} 
@@ -28,12 +28,11 @@ const UserInfoForm = () => {
     onChange = {(e) => setEmail(e.target.value)}
      placeholder= "Digite o seu email" 
      /> 
-
-    <p> {name}</p> 
+ 
     <button 
     type="submit">Enviar</button>
     </form>   
-    );
-};
+    )
+}
 
-export default UserInfoForm;
+export default UserInfoForm
