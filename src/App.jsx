@@ -1,4 +1,7 @@
 import './App.css';
+
+//CSS Modules
+
 import Welcome from'./components/Welcome';
 import BomDia from'./components/BomDia';
 import Pai from'./components/Pai';
@@ -12,6 +15,13 @@ import PaiFunction from'./components/PaiFunction';
 import Form from './components/Form';
 import RenderCondicional from './components/RenderCondicional';
 import LoginButton from './components/LoginButton';
+import Warning from'./components/Warning';
+import NumberList from'./components/NumberList';
+import BotaoEstilizado from'./components/BotaoEstilizado';
+import BotaoAzul from'./components/BotaoAzul';
+import Exercicio from'./components/Exercicio';
+
+
 
 function App() {
   return (<>
@@ -41,6 +51,16 @@ function App() {
     {/*6.12  - Expressao Ternária*/}
     <LoginButton loggedIn ={false}/>
     <LoginButton loggedIn ={true}/>
+     {/*6.13  - Render nulo*/}
+    <Warning warning = "Temos um Warning"/>
+    {/*6.14  - Listas e Chaves*/} 
+    <NumberList numbers={[1, 2, 3, 4, 5]} />
+    {/*6.15  - Estilos por atributo*/} 
+    <BotaoEstilizado/>
+    {/*6.16  - Estilos globais*/} 
+    <BotaoAzul/>
+    {/*6.17  - Exercicios*/}
+    <Exercicio/>
 </> 
   );
 }
